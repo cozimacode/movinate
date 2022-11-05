@@ -1,0 +1,46 @@
+.tabsPane {
+  width: 100%;
+  border-radius: 18px;
+  border: 2px solid #313131;
+  margin-top: 48px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+}
+
+.tabHeader {
+  display: flex;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+
+.resultsTab,
+.nominationsTab {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background-color: #313131;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.resultsTab:not(.activeTab),
+.nominationsTab:not(.activeTab) {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.nominationsTab {
+  border-top-left-radius: 0;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 10px;
+}
+
+.activeTab {
+  cursor: default;
+  background-color: black;
+}

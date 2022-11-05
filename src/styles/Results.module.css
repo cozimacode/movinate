@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px;
+}
+
+.heading {
+  align-self: flex-start;
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+}
+
+.data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pagination {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.pagination svg {
+  cursor: pointer;
+}
+
+.pagination svg:last-of-type {
+  transform: rotate(180deg);
+}
+
+.pagination span {
+  font-size: 20px;
+  color: white;
+}
+
+.pagination .paginationDisabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.submitNomination {
+  composes: nominateButton from "./MovieCard.module.css";
+  margin-top: 32px;
+  width: 150px;
+  height: 32px;
+}
